@@ -8,7 +8,8 @@
         Title="MainWindow" Height="700" Width="700">
     <StackPanel>
         <Image Source="dog.jpg" Width="700"/>
-        <TextBlock>Dog Name: </TextBlock><TextBox Name="DogName"></TextBox>
+        <TextBlock>Dog Name:</TextBlock>
+        <TextBox Name="DogName"></TextBox>
         <Button Click="Bark_Button_Click">Bark</Button>
         <Button Click="SayName_Button_Click">Say Name</Button>
     </StackPanel>
