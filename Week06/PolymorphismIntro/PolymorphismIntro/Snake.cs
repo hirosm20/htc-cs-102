@@ -7,23 +7,23 @@ using System.Windows;
 
 namespace PolymorphismIntro
 {
-    public class Frog : Animal
+    public class Snake : Animal
     {
         public bool IsPoisonous;
 
         public override void Speak()
         {
-            Ribbit();
+            Sssss();
         }
 
         public void Ribbit()
         {
-            MessageBox.Show("Ribbit");
+            MessageBox.Show("Sssss");
         }
 
-        public Frog() { }
+        public Snake() { }
 
-        public Frog(int height, string name, bool isPoisonous, int weight)
+        public Snake(int height, string name, bool isPoisonous, int weight)
         {
             this.IsPoisonous = isPoisonous;
             this.Height = height;

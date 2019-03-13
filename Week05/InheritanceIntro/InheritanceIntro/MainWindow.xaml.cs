@@ -33,32 +33,33 @@ namespace InheritanceIntro
 
         private void SayName_Button_Click(object sender, RoutedEventArgs e)
         {
+            List<Animals> animal = new List<Animals>();
             // Define a new List of dogs
-            List<Dog> dogs = new List<Dog>();
+            //List<Dog> dogs = new List<Dog>();
             
             // Instantiate some dog objects
             Dog dog1 = new Dog("Muppet", 20, "Rolf");
             Dog dog2 = new Dog("Golden Retriever", 30, "Air Bud");
 
-            // Add the dogs to the list
-            dogs.Add(dog1);
-            dogs.Add(dog2);
+            //// Add the dogs to the list
+            //dogs.Add(dog1);
+            //dogs.Add(dog2);
 
-            // Loop through the list and call a method on the objects
-            foreach (Dog d in dogs)
-            {
-                d.SayName();
-            }
+            //// Loop through the list and call a method on the objects
+            //foreach (Dog d in dogs)
+            //{
+            //    d.SayName();
+            //}
 
             Duck duck1 = new Duck(25, "Sir Quacks");
             Duck duck2 = new Duck(45, "Quack Sparrow");
             Duck duck3 = new Duck(35, "James Pond");
 
 
-            List<Duck> ducks = new List<Duck>();
-            ducks.Add(duck1);
-            ducks.Add(duck2);
-            ducks.Add(duck3);
+            //List<Duck> ducks = new List<Duck>();
+            animal.Add(duck1);
+            animal.Add(duck2);
+            animal.Add(duck3);
 
 
             foreach (Duck duck in ducks)
@@ -71,9 +72,9 @@ namespace InheritanceIntro
             Frog frog3 = new Frog(9, "Frogger");
 
             List<Frog> frogs = new List<Frog>();
-            frogs.Add(frog1);
-            frogs.Add(frog2);
-            frogs.Add(frog3);
+            animal.Add(frog1);
+            animal.Add(frog2);
+            animal.Add(frog3);
 
             foreach (Frog frog in frogs)
             {
@@ -85,29 +86,16 @@ namespace InheritanceIntro
             Snake snake3 = new Snake(5, "Nagini");
 
             List<Snake> snakes = new List<Snake>();
-            snakes.Add(snake1);
-            snakes.Add(snake2);
-            snakes.Add(snake3);
+            animal.Add(snake1);
+            animal.Add(snake2);
+            animal.Add(snake3);
 
-            foreach (Snake snake in snakes)
-            {
-                snake.SayName();
-            }
+            //foreach (Snake snake in snakes)
+            //{
+            //    snake.SayName();
+            //}
+            foreach (Animals animal in animals) ;
 
-
-            Tree tree1 = new Tree(1, "Severus Snake");
-            Tree tree2 = new Tree(5, "Nope Rope");
-            Tree tree3 = new Tree(5, "Nagini");
-
-            List<Tree> trees = new List<Tree>();
-            trees.Add(tree1);
-            trees.Add(tree2);
-            trees.Add(tree3);
-
-            foreach (Tree tree in trees)
-            {
-                tree.SayType();
-            }
         }
 
         private void Quack_Button_Click(object sender, RoutedEventArgs e)
@@ -128,10 +116,6 @@ namespace InheritanceIntro
             snake.Sssss();
         }
 
-        private void Tree_Button_Click(object sender, RoutedEventArgs e)
-        {
-            Tree tree = new Tree();
-            tree.Types();
-        }
+        
     }
 }
