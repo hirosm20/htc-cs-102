@@ -16,7 +16,7 @@ namespace PolymorphismIntro
             Sssss();
         }
 
-        public void Ribbit()
+        public void Sssss()
         {
             MessageBox.Show("Sssss");
         }

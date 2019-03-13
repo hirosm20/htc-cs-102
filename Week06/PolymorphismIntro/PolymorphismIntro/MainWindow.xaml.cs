@@ -21,6 +21,7 @@ namespace PolymorphismIntro
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public ObservableCollection<Animal> Animals;
         public MainWindow()
         {
@@ -65,13 +66,11 @@ namespace PolymorphismIntro
             }
         }
 
-         private void Snake_Button_Click(object sender, RoutedEventArgs e)
+        private void Snake_Button_Click(object sender, RoutedEventArgs e)
         {
             Snake snake = new Snake();
             snake.Sssss();
         }
-        
-    }
 
         private void lvAnimals_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -83,3 +82,6 @@ namespace PolymorphismIntro
         }
     }
 }
+
+   
+     
